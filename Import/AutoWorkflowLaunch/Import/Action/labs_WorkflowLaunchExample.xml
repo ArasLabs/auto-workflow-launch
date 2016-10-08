@@ -2,13 +2,13 @@
  <Item type="Action" id="5829FA615FEB49DAA3D1623064C6AC35" action="add">
   <item_query></item_query>
   <location>server</location>
-  <method keyed_name="Workflow Launch Example CSharp" type="Method">
+  <method keyed_name="labs_WorkflowLaunchExampleCSharp" type="Method">
    <Item type="Method" action="get" select="id">
-    <name>Workflow Launch Example CSharp</name>
+    <name>labs_WorkflowLaunchExampleCSharp</name>
    </Item>
   </method>
   <target>none</target>
   <type>item</type>
-  <name>Workflow Launch Example</name>
+  <name>labs_WorkflowLaunchExample</name>
  </Item>
 </AML>

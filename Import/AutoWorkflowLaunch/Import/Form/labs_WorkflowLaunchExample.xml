@@ -4,7 +4,7 @@
   <height>234</height>
   <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
   <width>699</width>
-  <name>Workflow Launch Example</name>
+  <name>labs_WorkflowLaunchExample</name>
   <Relationships>
    <Item type="Body" id="85E52DED2E8B431B9B2139976EBBB4AB" action="add">
     <bg_attach>scroll</bg_attach>
@@ -12,7 +12,7 @@
     <bg_image>../images/Backgrounds/wvleft.gif</bg_image>
     <bg_repeat>no-repeat</bg_repeat>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Launch Example" type="Form">8A318EA92BA64B7B8D13A6D0B4C09893</source_id>
+    <source_id keyed_name="labs_WorkflowLaunchExample" type="Form">8A318EA92BA64B7B8D13A6D0B4C09893</source_id>
     <Relationships>
      <Item type="Field" id="DC2775E8134F4CBA9B670EFCD0852610" action="add">
       <bg_color>#FFFFFF</bg_color>
