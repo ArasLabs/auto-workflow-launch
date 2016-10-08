@@ -10,5 +10,6 @@
   <target>none</target>
   <type>item</type>
   <name>labs_WorkflowLaunchExample</name>
+	<label>Workflow Launch Example</label>
  </Item>
 </AML>
