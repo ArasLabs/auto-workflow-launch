@@ -6,7 +6,7 @@
   <enforce_discovery>1</enforce_discovery>
   <hide_where_used>0</hide_where_used>
   <implementation_type>table</implementation_type>
-  <instance_data>WORKFLOW_LAUNCH_EXAMPLE</instance_data>
+  <instance_data>LABS_WORKFLOWLAUNCHEXAMPLE</instance_data>
   <is_dependent>0</is_dependent>
   <is_relationship>0</is_relationship>
   <is_versionable>0</is_versionable>
@@ -102,9 +102,9 @@
    <Item type="Server Event" id="4B33B100A99345CEB1E9600B9502F759" action="add">
     <event_version>version_1</event_version>
     <is_required>0</is_required>
-    <related_id keyed_name="labs_WorkflowLaunchExample CSharp" type="Method">
+    <related_id keyed_name="labs_WorkflowLaunchExampleCSharp" type="Method">
      <Item type="Method" action="get" select="id">
-      <name>labs_WorkflowLaunchExample CSharp</name>
+      <name>labs_WorkflowLaunchExampleCSharp</name>
      </Item>
     </related_id>
     <server_event>onAfterUpdate</server_event>

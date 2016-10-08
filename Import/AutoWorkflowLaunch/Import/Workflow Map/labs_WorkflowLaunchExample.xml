@@ -1,14 +1,14 @@
 ﻿<AML>
  <Item type="Workflow Map" id="645D30ECD71D405AB3A7524CEA7A9CD1" action="add">
-  <description xml:lang="en"></description>
+  <description xml:lang="en" />
   <node_bg_color>       </node_bg_color>
   <node_label1_color>       </node_label1_color>
-  <node_label1_font></node_label1_font>
+  <node_label1_font />
   <node_label2_color>       </node_label2_color>
-  <node_label2_font></node_label2_font>
+  <node_label2_font />
   <node_name_color>       </node_name_color>
-  <node_name_font></node_name_font>
-  <node_size></node_size>
+  <node_name_font />
+  <node_size />
   <process_owner keyed_name="Innovator Admin" type="Identity">
    <Item type="Identity" action="get" select="id">
     <name>Innovator Admin</name>
@@ -16,9 +16,35 @@
   </process_owner>
   <transition_line_color>       </transition_line_color>
   <transition_name_color>       </transition_name_color>
-  <transition_name_font></transition_name_font>
+  <transition_name_font />
   <name>labs_WorkflowLaunchExample</name>
   <Relationships>
+   <Item type="Workflow Map Activity" action="add">
+    <related_id keyed_name="End" type="Activity Template">
+     <Item type="Activity Template" id="4C1FAA20CFFA41F39C7581B8E21F973D" action="add">
+      <can_delegate>0</can_delegate>
+      <can_refuse>0</can_refuse>
+      <consolidate_ondelegate>0</consolidate_ondelegate>
+      <expected_duration>0</expected_duration>
+      <icon>../images/Icons/16x16/16x16_redx.gif</icon>
+      <is_auto>1</is_auto>
+      <is_end>1</is_end>
+      <is_start>0</is_start>
+      <message xml:lang="en">Workflow End</message>
+      <priority>1</priority>
+      <reminder_count>0</reminder_count>
+      <reminder_interval>0</reminder_interval>
+      <timeout_duration>0</timeout_duration>
+      <wait_for_all_inputs>0</wait_for_all_inputs>
+      <wait_for_all_votes>0</wait_for_all_votes>
+      <x>261</x>
+      <y>46</y>
+      <name>End</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="labs_WorkflowLaunchExample" type="Workflow Map">645D30ECD71D405AB3A7524CEA7A9CD1</source_id>
+   </Item>
    <Item type="Workflow Map Activity" action="add">
     <related_id keyed_name="Start" type="Activity Template">
      <Item type="Activity Template" id="8EE0345B19C643F78F5DBFD1A81CF3CD" action="add">
@@ -47,37 +73,11 @@
         <is_override>0</is_override>
         <name>Go</name>
         <related_id>F72A54B9AEF448DFAAFF4BDC6F1CBFA4</related_id>
-        <segments></segments>
+        <segments />
         <sort_order>128</sort_order>
         <source_id keyed_name="Start" type="Activity Template">8EE0345B19C643F78F5DBFD1A81CF3CD</source_id>
        </Item>
       </Relationships>
-     </Item>
-    </related_id>
-    <sort_order>128</sort_order>
-    <source_id keyed_name="labs_WorkflowLaunchExample" type="Workflow Map">645D30ECD71D405AB3A7524CEA7A9CD1</source_id>
-   </Item>
-   <Item type="Workflow Map Activity" action="add">
-    <related_id keyed_name="End" type="Activity Template">
-     <Item type="Activity Template" id="4C1FAA20CFFA41F39C7581B8E21F973D" action="add">
-      <can_delegate>0</can_delegate>
-      <can_refuse>0</can_refuse>
-      <consolidate_ondelegate>0</consolidate_ondelegate>
-      <expected_duration>0</expected_duration>
-      <icon>../images/Icons/16x16/16x16_redx.gif</icon>
-      <is_auto>1</is_auto>
-      <is_end>1</is_end>
-      <is_start>0</is_start>
-      <message xml:lang="en">Workflow End</message>
-      <priority>1</priority>
-      <reminder_count>0</reminder_count>
-      <reminder_interval>0</reminder_interval>
-      <timeout_duration>0</timeout_duration>
-      <wait_for_all_inputs>0</wait_for_all_inputs>
-      <wait_for_all_votes>0</wait_for_all_votes>
-      <x>261</x>
-      <y>46</y>
-      <name>End</name>
      </Item>
     </related_id>
     <sort_order>128</sort_order>
