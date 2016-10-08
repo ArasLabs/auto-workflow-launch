@@ -1,12 +1,9 @@
-# Automatic Workflow Branching
+# Automatic Workflow Launch
 
-The Automatic Workflow Branching project demonstrates automatic workflow branching based on a property of the controlled item.
+The Automatic Workflow Launch project demonstrates the launching of a workflow from a server event or action.
 
 #### How it works
-A method is attached to an automatic activity as an OnActivate server event.  When the workflow
-is started, the automatic activity is activated and the method finds the controlled item.  It
-then reads the Plant property, finds the corresponding path and sets that path to be the default.  
-The activity then closes and the default path is followed.
+A method is attached to the ItemType as an OnAfterAdd/OnAfterUpdate server event. When the item is saved with the Launch Workflow property set to 1, the method finds the Workflow Map by name, then instantiates and starts it. The same method is attached to the ItemType as an action, allowing the workflow to be launched using a menu choice.
 
 ## Project Details
 
@@ -34,25 +31,29 @@ The activity then closes and the default path is followed.
   * _Note: You must login as root for the package import to succeed!_
 4. Enter the package name in the TargetRelease field.
   * Optional: Enter a description in the Description field.
-5. Enter the path to your local `..\AutoWorkflowBranching\Import\imports.mf` file in the Manifest File field.
-6. Select **aras.labs.WorkflowAutomationExamples** and **aras.labs.AutoWorkflowBranching** in the Available for Import field.
+5. Enter the path to your local `..\AutoWorkflowLaunch\Import\imports.mf` file in the Manifest File field.
+6. Select **aras.labs.WorkflowAutomationExamples** and **aras.labs.AutoWorkflowLaunch** in the Available for Import field.
 7. Select Type = **Merge** and Mode = **Thorough Mode**.
 8. Click **Import** in the top left corner.
 9. Close the Aras Package Import tool.
 
-You are now ready to login to Aras and try out Automatic Workflow Branching.
+You are now ready to login to Aras and try out the Automatic Workflow Launch action/event.
 
 ## Usage
 
 1. Log in to Aras as admin.
 2. Navigate to **Workflow Examples** in the table of contents (TOC).
-3. Create a new Workflow Assignment Example item.
-4. Set the Plant property to any of the listed values.
-5. Click **Save/Unlock/Close**.
+3. Create a new Workflow Launch Example item.
+4. Click **Save/Unlock/Close**.
+5. Edit the item and check the **Launch Workflow** checkbox.
 6. Navigate to **My Innovator > My Inbasket** in the TOC.
-7. Search for the newly created assignment. The assignment activity should correspond to the chosen Plant on the Workflow Branching Example form.
+7. Search for the newly created assignment.
+8. Repeat steps 2-4.
+9. Choose the new item and run the **Workflow Launch Example** action (under the Actions menu)
+10. Navigate to **My Innovator > My Inbasket** in the TOC.
+11. Search for the newly created assignment.
 
-To review the dynamically created assignment and the paths of the workflow process item, open the Work Item from the assignment. On the item form, select **Views > Workflow** from the main menu to view the workflow process.
+As an alternative to checking My Inbasket, you can also determine whether an item has a workflow process from the item's worm. On the item form, select **Views > Workflow** from the main menu to view the workflow process. The resulting dialog will show the workflow process, if it exists, or an empty grid if there is no workflow process for the item.
 
 ## Contributing
 
