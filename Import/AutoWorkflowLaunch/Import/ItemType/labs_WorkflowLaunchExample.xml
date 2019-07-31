@@ -112,7 +112,7 @@
     <source_id keyed_name="labs_WorkflowLaunchExample" type="ItemType" name="labs_WorkflowLaunchExample">E5E968B4AEFD4A2A950A892EBE419280</source_id>
    </Item>
    <Item type="Item Action" id="909CB428F88A425FBE63962553C490A6" action="add">
-    <related_id keyed_name="labs_WorkflowLaunchExample" type="Action">5829FA615FEB49DAA3D1623064C6AC35</related_id>
+    <related_id keyed_name="labs_WorkflowLaunchExampleAction" type="Action">5829FA615FEB49DAA3D1623064C6AC35</related_id>
     <sort_order>128</sort_order>
     <source_id keyed_name="labs_WorkflowLaunchExample" type="ItemType" name="labs_WorkflowLaunchExample">E5E968B4AEFD4A2A950A892EBE419280</source_id>
    </Item>
